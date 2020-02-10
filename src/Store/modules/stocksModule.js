@@ -13,13 +13,25 @@ const mutations = {
   'SET_VEGETABLES' (state, vegetables) {
     state.vegetables = vegetables;
   }, 
-  'BUY_FRUITS' (state, {stockId, quantity, price}) {
-    const record = state.stocks.find(element => element.id == stockId);
+  'BUY_FRUITS' (state, {fruitId, quantity, price}) {
+    const record = state.fruits.find(element => element.id == fruitId);
     if(record) {
       record.quantity += quantity; 
     }else {
-      state.stocks.push({
-        id: stockId,
+      state.fruits.push({
+        id: fruitId,
+        quantity: quantity
+      });
+    }
+    state.amount += price * quantity;
+  }, 
+  'BUY_VEGETABLES' (state, {vegetableId, quantity, price}) {
+    const record = state.vegetables.find(element => element.id == vegetableId);
+    if(record) {
+      record.quantity += quantity; 
+    }else {
+      state.vegetables.push({
+        id: vegetableId,
         quantity: quantity
       });
     }
@@ -36,6 +48,9 @@ const actions = {
   }, 
   buyFruits: ({commit}, order) => {
     commit('BUY_FRUITS', order)
+  },
+  buyVegetables: ({commit}, order) => {
+    commit('BUY_VEGETABLES', order)
   } 
 }
 const getters = {

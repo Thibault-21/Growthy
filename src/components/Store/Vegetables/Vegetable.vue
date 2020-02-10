@@ -3,11 +3,11 @@
     <div class="box">
       <div class="title">
         <h4> {{vegetable.type}}<p>Price: {{vegetable.price}}€ / unit</p> </h4>
-        <p>Stock: {{vegetable.quantity}}</p>
+        <p>Stock: {{vegetable.stock}}</p>
       </div>
       <div class="content">
         <input type="number" placeholder="quantity"/>
-        <button>Buy</button>
+        <button @click="buyVegetables">Buy</button>
       </div>
     </div>
   </div>
@@ -15,7 +15,25 @@
 
 <script>
 export default {
-  props:['vegetable']
+  props:['vegetable'], 
+  data(){
+    return {
+      quantity: 0
+    }
+  }, 
+  methods: {
+    buyVegetables(){
+      const order = {
+        vegetableId: this.vegetable.id,
+        price: this.vegetable.price,
+        quantity: this.vegetable.quantity
+      };
+       /*eslint-disable */
+      console.log(order);
+      this.$store.dispatch('buyVegetables', order);
+      this.quantity = 0;
+    }
+  }
 }
 </script>
 

@@ -7,7 +7,7 @@
       </div>
       <div class="content">
         <input v-model="quantity" type="number" placeholder="quantity"/>
-        <button @click="buySomething">Buy</button>
+        <button @click="buyFruits">Buy</button>
       </div>
     </div>
   </div>
@@ -23,9 +23,9 @@ export default {
     }
   },
   methods: {
-  buySomething(){
+  buyFruits(){
       const order = {
-        stockId: this.fruit.id,
+        fruitId: this.fruit.id,
         price: this.fruit.price,
         quantity: this.quantity
       };
