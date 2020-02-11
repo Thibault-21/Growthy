@@ -1,39 +1,41 @@
 <template>
   <div class="main">
     <div class="gallery">
-      <div class="sup-1">
+      <div class="sup sup-1">
         <div class="title">
-          <h1>Les fermes de Gally</h1>
-          <p> https://www.lesfermesdegally.com/</p>
+          <h4>Les vergers de Gally <a href="https://www.lesfermesdegally.com/"></a></h4>
         </div>
         <div class="content">
-          <img src="">
+         <img src="https://www.lesfermesdegally.com/sites/default/files/styles/text_image_475/public/img/lieu-stcyr_S.jpg?itok=8W1vR0OC">      
         </div>
       </div>
-      <div class="sup-2">
+      <div class="sup sup-2">
         <div class="title">
-          <h1>Les fermes de Collonges</h1>
+          <h4>Les vergers de Champlain <a href="https://www.vergersdechamplain.fr/"></a></h4>
+          </div>
+        <div class=" content">
+          <img src="https://www.vergersdechamplain.fr/img/img/vdchistorique2.jpg">
+        </div>
+      </div>
+      <div class="sup sup-3">
+        <div class="title">
+          <h4>La vergers de St Eustache <a href="https://v-st-eustache.com/fr/"></a></h4>
         </div>
         <div class="content">
-          <img src="">
+          <img src="https://v-st-eustache.com/img/vergers-st-eustache.jpg">
         </div>
       </div>
-      <div class="sup-3">
+      <div class="sup sup-4">
         <div class="title">
-          <h1>Les fermes de Gally</h1>
+          <h4>Les vergers de la Valloire <a href="https://www.vergersvalloire.fr/"></a></h4>
         </div>
         <div class="content">
-          <img src="">
+          <img src="https://cdn.website-editor.net/db5fd18f2c88435ebf31fe22b288c60b/dms3rep/multi/desktop/d6b74ce3-0a56-409a-8e51-88a1079ef1c2.jpg">
         </div>
       </div>
-      <div class="sup-4">
-        <div class="title">
-          <h1>Les fermes de Gally</h1>
-        </div>
-        <div class="content">
-          <img src="">
-        </div>
-      </div>
+    </div>
+    <div class="footer">
+      <p>copyright</p>
     </div>
   </div>
 </template>
@@ -47,34 +49,62 @@ export default {
 <style scoped>
 .main {
   display: grid;
+  grid-template-rows: 90% 10%;
+  grid-gap: 10px;
 }
 .gallery {
   display: grid;
   grid-template-columns: 50% 50%; 
   grid-template-rows: 50% 50%; 
-  grid-gap: 10px; 
-  margin: 10px 10px;
+  grid-gap: 30px; 
+  margin: 15px 35px 25px 15px;
 }
-.sup-1 {
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  border: 2px solid lightcoral;
-}
-.sup-2 {
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  border: 2px solid lightcoral;
-  }
-.sup-3 {
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid lightcoral;
-  }
-.sup-4 {
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid lightcoral;}
 
+.sup {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0px;
+  border: 2px solid lightsalmon;
+  height: 90%;
+}
+.sup-1:hover {
+  background-color: lightsalmon;
+  color: white;
+
+}
+.sup-2:hover {
+  background-color: lightsalmon;
+  color: white;
+  
+  }
+.sup-3:hover {
+  background-color: lightsalmon;
+  color: white;
+
+  }
+.sup-4:hover {
+  background-color: lightsalmon;
+  color: white;
+
+  }
+.content {
+  height: 100%;
+}
+img {
+  height: 70%;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+.footer {
+  background-color: lightcoral;
+  margin: 30px 0px 5px 0px;
+  padding: 10px;
+  color: white;
+}
 </style>

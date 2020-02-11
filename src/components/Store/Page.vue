@@ -36,10 +36,10 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
 
-  background-color: lightblue;
-  color: black;
+  background-color: rgb(143, 204, 224);
+  color: white;
   border-radius: 5px;
-  border: 1px solid lightblue;
+  border: 1px solid rgb(143, 204, 224);
   width: 80%;
 // height: 30%;
 
@@ -49,10 +49,10 @@ header {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: lightgreen;
+  background-color: rgb(103, 196, 103);
   color: white;
   border-radius: 5px;
-  border: 1px solid lightgreen;
+  border: 1px solid rgb(103, 196, 103);
   width: 80%;
 // height: 30%;
 }

@@ -1,79 +1,89 @@
 <template>
   <div class="main">
-      <div class="who">
-        <h1>Who we are</h1>
-        <p> We are the digital generation trying to support French agriculture by providing natural, beautiful and healthy products from the best organic farms!</p>
-      </div>
-      <div class="concept">
-        <h1>Our concept</h1>
-        <p>Our concept is simple ! </p>
-        <ul>
-          <li>1/ We create partnership with bio french farms and buy theirs fruits and vegetables in a large scale</li>
-          <li>2/ We offer you to buy seasonal products online via our application </li>
-          <li>3/ We deliver in less than 12 hours</li>
-          </ul>
-      </div>
-      <!--  -->
-      <div class="value-proposition">
-        <ul>
-          <li>Easy and fast buy</li>
-          <li>Fast delivering</li>
-          <li>Availabilties and choice of the finest natural products thanks to a large scale purchasing with a fair price</li>
-          <li>High quality products, highest customer satisfaction in your restaurant, etc..</li>
-        </ul>
-      </div>
+    <div class="header">
+      <p>Tell us where you are..</p>
+    </div>
+    <div class="content">
+      <!-- the geolocalisation -->
+
+    </div>
+    <div class="suggestion">
+      <p>..And we will suggest you the finest suppliers nearest from you </p>
+    </div>
+    <div class="footer">
+
+    </div>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Home', 
-  components: {
 
-  }
 }
 </script>
 
 <style scoped>
 .main {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
-  grid-gap: 10px;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 60% 20% 10%;
+  grid-gap: 35px;
+  margin: 10px;
+  padding: 5px;
 }
-
-.who {
+.header{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: lightblue;
+  background-color: lightcoral;
+  color: white;
+  padding: 15px;
+  border: 1px solid lightcoral;
   border-radius: 5px;
-  margin: 10px 10px;
-  padding: 10px;
-  padding: 20px;
+  height: 100%;
   margin: 10px;
+  text-align: center;
 }
-.concept {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.content{
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: lightcyan;
+  background-color: white;
+  color: lightcoral;
+  padding: 10px;
+  border: 1px solid lightcoral;
   border-radius: 5px;
-  padding: 20px;
+  height: 100%;
   margin: 10px;
+  align-items: center;
 }
-.value-proposition {
+.suggestion{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: lightcyan;
+  background-color: lightsalmon;
+  color: white ;
+  padding: 10px;
+  border: 1px solid lightsalmon;
   border-radius: 5px;
-  padding: 20px;
+  height: 100%;
+  margin: 10px;
+  text-align: center;
+}
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+  height: 100%;
   margin: 10px;
 }
-
 </style>

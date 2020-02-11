@@ -56,12 +56,12 @@ export default {
   margin: 20px 0px;
   padding: 5px;
   width: 70%;
-  border: 3px solid rgb(100, 214, 100);
+  border: 3px solid rgb(103, 196, 103);
   /* align-items: ; */
   justify-self: center;
 }
 .title {
-  background-color: rgb(100, 214, 100);
+  background-color: rgb(103, 196, 103);
   padding: 1px 15px;
   border-radius: 5px;
   margin: 5px auto;
@@ -77,16 +77,16 @@ export default {
 }
 input {
   border-radius: 5px;
-  border: 1px solid rgb(100, 214, 100);
+  border: 1px solid rgb(103, 196, 103);
   margin: 10px auto;
   padding: 20px;
 }
 button {
   border-radius: 5px;
-  background-color: rgb(100, 214, 100);
+  background-color: rgb(103, 196, 103);
   color: white;
   padding: 20px;
   margin-left: 20px;
-  border: 1px solid rgb(100, 214, 100);
+  border: 1px solid rgb(103, 196, 103);
 }
 </style>

@@ -1,9 +1,10 @@
 <template>
   <nav>
     <router-link class="navbar" active-class="active" exact to="/">Home</router-link>
+    <router-link class="navbar" active-class="active" to="/concept">Concept</router-link>
+    <router-link class="navbar" active-class="active" to="/suppliers">Our Suppliers</router-link>
      <router-link class="navbar" active-class="active" to="/store">Store</router-link>
      <router-link class="navbar" active-class="active" to="/cart">Cart  {{cartAmount}} €</router-link>
-    <router-link class="navbar" active-class="active" to="/suppliers">Our Suppliers</router-link>
     <router-link class="navbar" active-class="active" to="/contact">Contact</router-link>
   </nav>
 </template>

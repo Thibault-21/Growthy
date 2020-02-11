@@ -53,12 +53,12 @@ export default {
   margin: 20px 0px;
   padding: 5px;
   width: 70%;
-  border: 3px solid rgb(154, 197, 211);
+  border: 3px solid rgb(143, 204, 224);
   align-items: center;
   justify-self: center;
 }
 .title {
-  background-color: rgb(154, 197, 211);
+  background-color: rgb(143, 204, 224);
   padding: 1px 15px;
   border-radius: 5px;
   margin: 5px auto;
@@ -74,16 +74,16 @@ export default {
 }
 input {
   border-radius: 5px;
-  border: 1px solid rgb(154, 197, 211);
+  border: 1px solid rgb(143, 204, 224);
   margin: 10px auto;
   padding: 20px;
 }
 button {
   border-radius: 5px;
-  background-color: rgb(154, 197, 211);
+  background-color: rgb(143, 204, 224);
   color: white;
   padding: 20px;
   margin-left: 20px;
-  border: 1px solid rgb(154, 197, 211);
+  border: 1px solid rgb(143, 204, 224);
 }
 </style>
