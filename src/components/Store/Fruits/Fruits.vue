@@ -21,5 +21,10 @@ export default {
 </script>
 
 <style scoped>
-
+.main {
+  /* background-color: lightgray; */
+  padding: 20px;
+  margin: 10px; 
+  border-radius: 5px;
+}
 </style>

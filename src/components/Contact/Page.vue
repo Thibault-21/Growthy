@@ -80,9 +80,8 @@ h2 {
 }
 main {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows:  25% 25% 25% 25% ;
   margin: 10px auto;
+
 }
 
 footer {

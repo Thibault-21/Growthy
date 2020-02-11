@@ -27,21 +27,25 @@
     </label>
     
     <button class="btn-submit">Submit</button>
+    <!-- https://console.firebase.google.com/u/0/project/mini-app-vuex/database/firestore/rules -->
     </div>
   </form>
 </template>
 
 <script>
 export default {
+  name: 'BusinessForm', 
+  methods: {
 
+  }
 }
 </script>
 
 <style scoped>
 .main {
-  margin: 30px 5px;;
+  margin: 30px 20px;
   border-radius: 5px;
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 5;

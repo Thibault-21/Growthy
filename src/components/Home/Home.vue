@@ -5,6 +5,11 @@
     </div>
     <div class="content">
       <!-- the geolocalisation -->
+<!-- this tutotrial => https://levelup.gitconnected.com/how-to-add-geolocation-to-a-vue-js-app-14716b90d87b -->
+
+        <button class="find-me">Show me the orchards around me</button>
+        <p class="status"></p>
+        <a class="map-link" target="_blank"></a>
 
     </div>
     <div class="suggestion">
@@ -18,7 +23,17 @@
 
 <script>
 export default {
+// geolocation : 
 
+  // this.$getLocation(options)
+  // .then(coordinates => {
+  //   console.log(coordinates);
+  // });
+  // // watch a location 
+  // this.$watchLocation(options)
+  // .then(coordinates => {
+  //   console.log(coordinates);
+  // })
 }
 </script>
 
@@ -27,7 +42,7 @@ export default {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 10% 60% 20% 10%;
-  grid-gap: 35px;
+  grid-gap: 40px;
   margin: 10px;
   padding: 5px;
 }
@@ -85,5 +100,17 @@ export default {
   border-radius: 5px;
   height: 100%;
   margin: 10px;
+}
+.find-me {
+  /* border-radius: 50px; */
+  background-color: rgb(189, 189, 189);
+  /* padding: 30px; */
+  clip-path: circle(12% at 50% 50%);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  justify-self: center;
+
 }
 </style>
