@@ -9,6 +9,7 @@
           <component :is="selectedComponent"></component>
         </keep-alive>
       </template>
+      <template #footer></template>
     </Page>
   
 </template>

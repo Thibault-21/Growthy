@@ -2,11 +2,11 @@
    <div class="main">
     <div class="box">
       <div class="title">
-        <h4> {{vegetable.type}}<p>Price: {{vegetable.price}}€ / unit</p> </h4>
+        <h4> {{vegetable.type}}<p>Price: {{vegetable.price}}€ / kg</p> </h4>
         <p>Stock: {{vegetable.stock}}</p>
       </div>
       <div class="content">
-        <input type="number" placeholder="quantity"/>
+        <input v-model="quantity" type="number" placeholder="quantity"/>
         <button @click="buyVegetables">Buy</button>
       </div>
     </div>
@@ -26,7 +26,7 @@ export default {
       const order = {
         vegetableId: this.vegetable.id,
         price: this.vegetable.price,
-        quantity: this.vegetable.quantity
+        quantity: this.quantity
       };
        /*eslint-disable */
       console.log(order);

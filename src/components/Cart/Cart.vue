@@ -1,71 +1,44 @@
 <template>
-  <div class="main">
-    <div class="cart">
-      <h3>Your Cart</h3>
-      <div class="order">
-        <div class="title">
-          <h4>Banana</h4>
-          <p>{{amount}}</p>
-        </div>
-        <div class="content">
-          <p>quantity : 
-            <ul><li></li></ul>
-          </p>
-        </div>
-      </div>
+  <div class="cart">
+    <div class="title">
+      <h3>Your Cart is: {{getCartAmount}}€ </h3>
+    </div>
+    <div class="content">
+      <!-- <CartFruit class="fruits" v-for="fruit in fruitsAddedToCart" :key="fruit.id" :stockFruit="fruit"></CartFruit> -->
     </div>
   </div>
 </template>
 
 <script>
+// import CartFruit from './CartFruit'
 export default {
   name: 'Cart',
-  props: ['stock', 'amount'], 
-  data(){
-    return {
-      quantity: 0
-    }
+  components: {
+        // CartFruit
   },
-  methods: {
-    // actions
+  computed: {
+    getCartAmount(){
+      return this.$store.getters.getAmount;
+    }, 
+    fruitsAddedToCart(){
+      return this.$store.getters.fruitsCart;
+    },
+    vegetablesAddedToCart(){
+      return this.$store.getters.vegetableCart;
+    }, 
   }
 }
 </script>
 
 <style scoped>
-.main {
-  /* border: 1px solid black; */
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 40% 60%;
-  margin: 20px auto;
-}
-.cart {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.order {
-  color: lightcoral;
-  border: 1px solid lightcoral;
+.cart{
+  border: 2px solid black;
+  padding: 20px;
   border-radius: 5px;
+  height: 100%;
 }
-.title {
-  background-color: lightcoral;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-  /* border: 1px solid lightcoral; */
+h3 {
+  margin: 0 auto;
 }
-.content {
-  grid-column-start: 2 ;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border-radius: 5px;
-  /* border: 1px solid lightcoral; */
-  color: lightcoral;
 
-}
 </style>

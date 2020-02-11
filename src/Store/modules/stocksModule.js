@@ -36,6 +36,24 @@ const mutations = {
       });
     }
     state.amount += price * quantity;
+  }, 
+  'REMOVE_FRUITS' (state, {fruitId, quantity, fruitPrice}) {
+    const save = state.fruits.find(element => element.id == fruitId.id);
+    if(save.quantity > quantity) {
+      save.quantity -= quantity;
+    }else {
+      state.fruits.splice(state.fruits.indexOf(save), 1);
+    }
+    state.amount -= fruitPrice * quantity;
+  },
+  'REMOVE_VEGETABLES' (state, {vegetableId, quantity, vegetablePrice}) {
+    const save = state.vegetables.find(element => element.id == vegetableId.id);
+    if(save.quantity > quantity) {
+      save.quantity -= quantity;
+    }else {
+      state.vegetables.splice(state.vegetables.indexOf(save), 1);
+    }
+    state.amount -= vegetablePrice * quantity;
   }
 }
 
@@ -51,6 +69,12 @@ const actions = {
   },
   buyVegetables: ({commit}, order) => {
     commit('BUY_VEGETABLES', order)
+  }, 
+  removedFruits: ({commit}, order) => {
+    commit('REMOVE_FRUITS', order)
+  }, 
+  removedVegetables: ({commit}, order) => {
+    commit('REMOVE_VEGETABLES', order)
   } 
 }
 const getters = {
@@ -63,15 +87,28 @@ const getters = {
   getAmount(state) {
     return state.amount;
   }, 
-  stockCart: (state, getters) => {
-    return state.fruits.map(fruit => {
-      const save = getters.fruits.find(element => element.id === fruit.id)
+  fruitsCart (state, getters) {
+    return state.fruits.map(fruitStock => {
+      const save = getters.fruits.find(element => element.id == fruitStock.id)
+       /*eslint-disable */
+    console.log('fruitsCart');
       return {
-        id: fruit.id,
-        quantity: fruit.quantity,
+        id: fruitStock.id,
+        quantity: fruitStock.quantity,
         price: save.price,
         type: save.type
       }
+    });    
+  }, 
+  vegetableCart: (state, getters) => {
+    return state.vegetables.map(vegetable => {
+      const save = getters.vegetables.find(element => element.id == vegetable.id)
+      return {
+        id: vegetable.id,
+        quantity: vegetable.quantity,
+        type: save.type,
+        price: save.price
+      } 
     });
   }
 }

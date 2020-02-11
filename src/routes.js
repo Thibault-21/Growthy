@@ -1,13 +1,15 @@
 import Home from './components/Home/Home'
-import Contact from './components/Contact'
+import Contact from './components/Contact/Contact'
 import Store from './components/Store/Store'
-import Cart from './components/Cart/Cart'
+import Carts from './components/Cart/Carts'
+import Suppliers from './components/Suppliers'
 
 export const routes = [
   { path:'/', component: Home, name: 'Home' },
   { path:'/contact', component: Contact, name: 'Contact' },
   { path:'/store', component: Store, name: 'Store' },
-  { path: '/cart', component: Cart, name: 'Cart' }
+  { path: '/cart', component: Carts, name: 'cart' },
+  { path: '/suppliers', component: Suppliers, name: 'suppliers' }
 ];
 
 

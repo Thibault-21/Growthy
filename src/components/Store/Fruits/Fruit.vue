@@ -2,7 +2,7 @@
   <div class="main">
     <div class="box">
       <div class="title">
-        <h4>{{fruit.type}} <p>Price: {{fruit.price}}€ / unit</p> </h4>
+        <h4>{{fruit.type}}<p>Price: {{fruit.price}}€ /kg</p> </h4>
         <p>Stock: {{fruit.stock}}</p>
       </div>
       <div class="content">
