@@ -1,5 +1,8 @@
 <template>
   <div class="main">
+     <div class="header">
+        <h3>Some partnerships in France..</h3>
+      </div>
     <div class="gallery">
       <div class="sup sup-1">
         <div class="title">
@@ -34,6 +37,9 @@
         </div>
       </div>
     </div>
+    <div class="before-footer">
+      <p>And more outside of the boundaries soon..</p>
+    </div>
     <div class="footer">
       <p>copyright</p>
     </div>
@@ -49,8 +55,12 @@ export default {
 <style scoped>
 .main {
   display: grid;
-  grid-template-rows: 90% 10%;
+  grid-template-rows: 5% 80% 5% 10%;
   grid-gap: 10px;
+}
+.header {
+  color: lightsalmon;
+  text-align: center;
 }
 .gallery {
   display: grid;
@@ -100,6 +110,10 @@ a {
   text-decoration: none;
   padding: 10px;
   margin: 10px;
+}
+.before-footer {
+  color: lightsalmon;
+  text-align: center;
 }
 .footer {
   background-color: lightcoral;

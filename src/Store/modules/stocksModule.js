@@ -4,7 +4,7 @@ import vegetablesStocks from '../../Data/vegetablesStocks'
 const state = {
   fruits: [], 
   vegetables: [], 
-  amount: 0
+  amount: 0, 
 }
 const mutations = {
   'SET_FRUITS' (state, fruits) {
@@ -24,6 +24,7 @@ const mutations = {
       });
     }
     state.amount += price * quantity;
+    state.quantity -= quantity;
   }, 
   'BUY_VEGETABLES' (state, {vegetableId, quantity, price}) {
     const record = state.vegetables.find(element => element.id == vegetableId);
@@ -54,7 +55,8 @@ const mutations = {
       state.vegetables.splice(state.vegetables.indexOf(save), 1);
     }
     state.amount -= vegetablePrice * quantity;
-  }
+  },
+
 }
 
 const actions = { 
@@ -78,6 +80,7 @@ const actions = {
   } 
 }
 const getters = {
+
   getFruits: state => {
     return state.fruits;
   },
@@ -110,6 +113,13 @@ const getters = {
         price: save.price
       } 
     });
+  },
+  productCart: (state, getters) => {
+    const concate = state.vegetables.concat(state.fruits);
+    return state.concat.map(item => {
+      const record = getters.vegetables.find(item => item.id == vegetable.id)
+      const rec = getters.fruits.find(element => element.id == fruit.id)
+    })
   }
 }
 

@@ -1,12 +1,17 @@
-<template>
-  <nav>
-    <router-link class="navbar" active-class="active" exact to="/">Home</router-link>
-    <router-link class="navbar" active-class="active" to="/concept">Concept</router-link>
-    <router-link class="navbar" active-class="active" to="/suppliers">Our Suppliers</router-link>
-     <router-link class="navbar" active-class="active" to="/store">Store</router-link>
-     <router-link class="navbar" active-class="active" to="/cart">Cart  {{cartAmount}} €</router-link>
-    <router-link class="navbar" active-class="active" to="/contact">Contact</router-link>
-  </nav>
+<template>   
+    <nav>
+       <div class="nav-2">
+      <img src="@/assets/cover.png" alt="logo">
+      </div>
+      <router-link class="navbar" active-class="active" exact to="/">Home</router-link>
+      <router-link class="navbar" active-class="active" to="/concept">Us</router-link>
+      <router-link class="navbar" active-class="active" to="/partnerships">Partnerships</router-link>
+      <router-link class="navbar" active-class="active" to="/store">MarketPlace</router-link>
+      <router-link class="navbar" active-class="active" to="/cart">Cart  {{cartAmount}} €</router-link>
+      <router-link class="navbar" active-class="active" to="/contact">Contact</router-link>
+      <router-link class="navbar nav-bar3" active-class="active" to="/logins">Login</router-link>
+      <router-link class="navbar nav-bar4" active-class="active" to="/signUp">SignUp</router-link>
+    </nav>
 </template>
 
 <script>
@@ -31,10 +36,30 @@ nav {
   color: white;
   margin: 10px;
   padding: 20px;
+  
 }
 .active {
   border: 1px solid white;
   border-radius: 5px;
 }
+.nav-2 {
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+}
 
+img {
+  height: 20%;
+  width: 20%;
+  align-self: center;
+}
+.nav-bar3 {
+  margin: 0px 0px 0px 800px;
+  justify-self: right;
+  text-align: right;
+}
+.nav-bar4
+{
+   margin: 0px 0px 0px 10px;
+}
 </style>

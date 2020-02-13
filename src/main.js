@@ -9,6 +9,7 @@ import VueGeolocation from 'vue-browser-geolocation';
 import VueResource from 'vue-resource'
 
 Vue.use(VueResource);
+
 // Vue.use(VueAxios, axios)
 Vue.use(VueGeolocation);
 Vue.use(VueRouter);

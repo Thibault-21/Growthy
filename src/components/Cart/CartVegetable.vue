@@ -20,7 +20,7 @@
 <script>
 export default {
   name: 'Cart',
-  props: ['stockFruit', 'stockVegetable', 'amount'], 
+  props: ['stockVegetable', 'amount'], 
   data(){
     return {
       quantity: 0

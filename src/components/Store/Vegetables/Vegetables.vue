@@ -2,7 +2,6 @@
   
     <div class="main">
       <Vegetable :key="vegetable.id" v-for="vegetable in vegetables" :vegetable="vegetable"></Vegetable>
-     
     </div>
 </template>
 

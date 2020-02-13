@@ -7,7 +7,7 @@
       <!-- the geolocalisation -->
 <!-- this tutotrial => https://levelup.gitconnected.com/how-to-add-geolocation-to-a-vue-js-app-14716b90d87b -->
 
-        <button class="find-me">Show me the orchards around me</button>
+        <button @click="geolocate" class="find-me">Locating</button>
         <p class="status"></p>
         <a class="map-link" target="_blank"></a>
 
@@ -23,6 +23,11 @@
 
 <script>
 export default {
+  methods: {
+    geolocate(){
+      return 
+    }
+  }
 // geolocation : 
 
   // this.$getLocation(options)
@@ -67,7 +72,7 @@ export default {
   grid-row-end: 3;
   background-color: white;
   color: lightcoral;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid lightcoral;
   border-radius: 5px;
   height: 100%;
@@ -85,7 +90,7 @@ export default {
   border: 1px solid lightsalmon;
   border-radius: 5px;
   height: 100%;
-  margin: 10px;
+  margin: 20px 10px;
   text-align: center;
 }
 .footer{
@@ -103,14 +108,37 @@ export default {
 }
 .find-me {
   /* border-radius: 50px; */
-  background-color: rgb(189, 189, 189);
+  background-color: lightcoral;
   /* padding: 30px; */
-  clip-path: circle(12% at 50% 50%);
+  clip-path: circle(8% at 50% 50%);
   height: 100%;
   width: 100%;
   text-align: center;
   color: white;
+  border: 1px solid lightcoral;
   justify-self: center;
-
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
+/* 
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: lightcoral;
+    border-radius: 100%;
+  }
+  25% {
+    background-color: rgb(165, 88, 88);
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: rgb(124, 70, 70);
+  }
+} */
 </style>

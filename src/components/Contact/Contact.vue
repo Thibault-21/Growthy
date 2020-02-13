@@ -56,4 +56,7 @@ input {
   border: 1px solid lightcoral;
   margin: 10px auto;
 }
+*:focus {
+  outline: none;
+}
 </style>

@@ -9,15 +9,16 @@
 import Fruit from './Fruit'
 export default {
   components: {
-    Fruit
+    Fruit, 
   }, 
   computed: {
     fruits(){
       return this.$store.getters.getFruits;
        /*eslint-disable */
-    }
+    },
   }
 }
+
 </script>
 
 <style scoped>
