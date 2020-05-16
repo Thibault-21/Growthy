@@ -16,7 +16,7 @@
       <p>..And we will suggest you the finest suppliers nearest from you </p>
     </div>
     <div class="footer">
-
+      
     </div>
   </div>
 </template>
