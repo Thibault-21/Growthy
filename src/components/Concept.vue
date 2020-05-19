@@ -134,7 +134,7 @@ ul, li {
     margin: 10px 20px;
     padding: 10px;
     margin: 10px 10px 5px 5px;
-    width: 100%;
+    width: 375px;
     height: 200px;
   }
   img {

@@ -183,6 +183,7 @@ img {
   grid-template-rows: 100;
   padding: 20px;
   height: 100%;
+  width: 375px;
 }
 .subscription {
   grid-column-start: 1;
@@ -199,6 +200,7 @@ img {
   border-radius: 5px;
   margin: 10px;
   padding: 10px 5px;
+  width: 375px;
 }
   img {
     visibility: hidden;

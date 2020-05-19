@@ -61,6 +61,7 @@ main {
  grid-template-columns: 100%;
  grid-template-rows: 100%;
  margin: 10px 10px;
+ widows: 375px;
 }
 @media only screen and (max-width: 375px) {
   .main {
