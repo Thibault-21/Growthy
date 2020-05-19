@@ -58,16 +58,17 @@ export default {
 @media only screen and (max-width: 375px) {
   .main {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 100%;
   grid-template-rows: 80% 20%;
-  margin: 20px auto;
+  margin: 20px 10px;
   height: 615px;
 }
 .cart {
-  grid-column-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-
+  width: 300px;
 }
 .footer {
   grid-column-start: 1;
@@ -77,7 +78,7 @@ export default {
   background-color: black;
   color: white;
   padding: 10px;
-  width: 870px;
+  width: 375px;
   }
 }
 </style>

@@ -50,7 +50,7 @@ h3 {
     border-radius: 5px;
     color: rgb(1, 166, 79) ;
     height: 100px;
-    width: 700px;
+    width: 375px;
   }
 }
 </style>
