@@ -67,7 +67,7 @@ main {
     display: grid;
     grid-template-columns: 100%;
     margin: 10px 10px;
-    width: 875px;
+    width: 375px;
   }
   .btn-v {
     grid-column-start: 2;

@@ -47,8 +47,8 @@ export default {
   margin: 10px 0px;
 }
 .box {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   border-radius: 5px;
@@ -93,17 +93,18 @@ button {
   .main {
     display: grid; 
     grid-template-columns: 100%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 100%;
     /* border: 5px solid blue; */
     margin: 10px 0px;
-    height: 300px;
+    height: 600px;
   }
   .box {
+    grid-column-start: 1;
     border-radius: 5px;
     background-color: white;
     margin: 20px 0px;
     padding: 5px;
-    width: 350px;
+    width: 250px;
     border: 3px solid rgb(103, 196, 103);
     align-items: center;
     justify-self: center;
@@ -135,7 +136,7 @@ button {
     background-color: rgb(103, 196, 103);
     color: white;
     padding: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     border: 1px solid rgb(103, 196, 103);
   }
 }

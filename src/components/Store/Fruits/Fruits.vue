@@ -24,8 +24,8 @@ export default {
 <style scoped>
 .main {
   /* background-color: lightgray; */
-  padding: 20px;
-  margin: 10px; 
+  padding: 0px;
+  margin: 0px 70px 0 0; 
   border-radius: 5px;
 }
 </style>

@@ -19,19 +19,18 @@ export default {
 </script>
 
 <style scoped>
-
-header {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50% 50%;
-}
-h2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin: 20px auto 0px auto;
-}
+  header {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+  }
+  h2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 20px auto 0px auto;
+  }
 
 .btn-s {
   grid-column-start: 1;
@@ -43,15 +42,15 @@ h2 {
   border: 2px solid lightsalmon;
   color: white;
 }
-.btn-a {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  .btn-a {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 
-  background-color: lightcoral;
-  border: 2px solid lightcoral;
-  color: white;
+    background-color: lightcoral;
+    border: 2px solid lightcoral;
+    color: white;
 }
 .btn-o {
   grid-column-start: 3;
@@ -68,7 +67,6 @@ h2 {
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-
   background-color: white;
   border: 2px solid lightgray;
   color: black;
@@ -81,7 +79,6 @@ h2 {
 main {
   display: grid;
   margin: 10px auto;
-
 }
 
 footer {
@@ -99,15 +96,15 @@ footer {
     height: 730px;
     place-self: center;
   }
-footer {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background-color: black;
-  color: white;
-  padding: 20px;
-  width: 850px;
-}
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 375px;
+  }
 }
 </style>

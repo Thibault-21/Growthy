@@ -23,8 +23,8 @@ export default {
 <style scoped>
 .main {
 /* background: lightgray; */
-padding: 20px;
-margin: 10px; 
+padding: 0px;
+margin: 0px; 
 border-radius: 5px;
 }
 </style>

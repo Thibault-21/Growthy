@@ -92,14 +92,14 @@ button {
     grid-template-columns: 100%;
     /* border: 5px solid blue; */
     margin: 10px 0px;
-    height: 300px;
+    height: 600px;
   }
   .box {
     border-radius: 5px;
     background-color: white;
     margin: 20px 0px;
     padding: 5px;
-    width: 350px;
+    width: 250px;
     border: 3px solid rgb(143, 204, 224);
     align-items: center;
     justify-self: center;
