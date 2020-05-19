@@ -58,7 +58,6 @@ export default {
   grid-gap: 10px;
   font-family: Helvetica, Arial, sans-serif;
 }
-
 .who {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -112,7 +111,6 @@ img {
   border-radius: 5px;
   padding: 20px;
   margin: 10px 0px;
-  /* height: 100%; */
   color: white;
 }
 h4 {
@@ -125,46 +123,43 @@ ul, li {
   .main {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 30% 30% 10%;
     grid-gap: 10px;
     font-family: Helvetica, Arial, sans-serif;
-    width: 550px;
+    width: 375px;
+    height: 1500px;
   }
   .who {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
     background-color: lightblue;
     border-radius: 5px;
     margin: 10px 20px;
     padding: 10px;
-    margin: 10px;
-    width: 90%;
-  }
-  .who-img {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    margin: 10px 10px 5px 5px;
+    width: 100%;
+    height: 200px;
   }
   img {
-    height: 250px;
-    width: 325px;
-    padding: 15px;
+  visibility: hidden;
+  }
+  .concept {
+    grid-column-start: 1;
+    grid-column-end: 2;
     border-radius: 5px;
+    margin: 10px 10px;
+    padding: 10px;
+    margin: 10px 0px 5px 5px;
+    width: 100%;
+    height: 350px;
+  }
+  .value-proposition {
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 10px;
+    margin: 10px 0px 5px 5px;
+    width: 100%;
+    height: 375px;
   }
   .footer {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: black;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0px;
-    /* height: 100%; */
-    color: white;
+    width: 375px;
   }
 }
 </style>
