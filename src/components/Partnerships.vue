@@ -140,5 +140,8 @@ a {
   .footer {
     visibility: hidden;
   }
+  h3 {
+    visibility: hidden;
+  }
 }
 </style>
