@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .main {
-  /* border: 1px solid black; */
+
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 40% 60%;
@@ -61,16 +61,16 @@ export default {
   grid-row-end: 2;
 }
 .order {
-  color: lightcoral;
-  border: 1px solid lightcoral;
+  color: rgb(1, 166, 79);
+  border: 1px solid rgb(1, 166, 79);
   border-radius: 5px;
 }
 .title {
-  background-color: lightcoral;
+  background-color: rgb(1, 166, 79);
   color: white;
   border-radius: 5px;
   padding: 10px;
-  /* border: 1px solid lightcoral; */
+
 }
 .content {
   grid-column-start: 2 ;
@@ -78,8 +78,7 @@ export default {
   grid-row-start: 1;
   grid-row-end: 2;
   border-radius: 5px;
-  /* border: 1px solid lightcoral; */
-  color: lightcoral;
+  color: rgb(1, 166, 79);
 
 }
 </style>

@@ -4,7 +4,15 @@
         <h4>Who we are..</h4>
         <p> We are the digital generation trying to support French agriculture by providing natural, beautiful and healthy products from the best organic farms!</p>
       </div>
-      <div class="concept">
+      <div class="box who-img">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" 
+             alt="team growthy">
+      </div>
+      <div class="concept-img">
+        <img src="https://images.unsplash.com/photo-1548695607-9c73430ba065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1484&q=80" 
+             alt="delivery growthy guy">
+      </div>
+      <div class="box concept">
         <h4>Our concept is simple ! </h4>
         <ul>
           <li> We create partnership with bio french farms and buy theirs fruits and vegetables in a large scale</li>
@@ -13,7 +21,7 @@
           </ul>
       </div>
       <!--  -->
-      <div class="value-proposition">
+      <div class="box value-proposition">
         <h4>Why us ?</h4>
         <ul>
           <li>Easy and fast buy</li>
@@ -21,6 +29,10 @@
           <li>Availabilties and choice of the finest natural products thanks to a large scale purchasing with a fair price</li>
           <li>High quality products, highest customer satisfaction in your restaurant, etc..</li>
         </ul>
+      </div>
+      <div class="why-image">
+        <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" 
+            alt="image of products fruits and vegetables">
       </div>
       <div class="footer">
         <p>copyright</p>
@@ -56,8 +68,19 @@ export default {
   border-radius: 5px;
   margin: 10px 10px;
   padding: 10px;
-  padding: 20px;
   margin: 10px;
+}
+.who-img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+img {
+  height: 350px;
+  width: 600px;
+  padding: 15px;
+  border-radius: 5px;
 }
 .concept {
   grid-column-start: 2;
@@ -85,7 +108,7 @@ export default {
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  background-color: lightcoral;
+  background-color: black;
   border-radius: 5px;
   padding: 20px;
   margin: 10px 0px;
@@ -97,5 +120,51 @@ h4 {
 }
 ul, li {
   padding: 10px;
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30% 10%;
+    grid-gap: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 550px;
+  }
+  .who {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+  }
+  .who-img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  img {
+    height: 250px;
+    width: 325px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0px;
+    /* height: 100%; */
+    color: white;
+  }
 }
 </style>

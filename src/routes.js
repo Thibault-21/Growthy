@@ -1,4 +1,4 @@
-import Home from './components/Home/Home'
+// import Home from './components/Home/Home'
 import Contact from './components/Contact/Contact'
 import Store from './components/Store/Store'
 import Carts from './components/Cart/Carts'
@@ -8,7 +8,7 @@ import SignUp from './components/SignUp/SignUp'
 import Logins from './components/Login/Logins'
 
 export const routes = [
-  { path:'/', component: Home, name: 'Home' },
+  { path:'/', component: Store, name: 'Store' },
   { path:'/contact', component: Contact, name: 'Contact' },
   { path:'/store', component: Store, name: 'Store' },
   { path: '/cart', component: Carts, name: 'Cart' },

@@ -47,8 +47,8 @@ export default {
   margin: 10px 0px;
 }
 .box {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   border-radius: 5px;
@@ -88,5 +88,55 @@ button {
   padding: 20px;
   margin-left: 20px;
   border: 1px solid rgb(103, 196, 103);
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    /* border: 5px solid blue; */
+    margin: 10px 0px;
+    height: 300px;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 5px;
+    width: 350px;
+    border: 3px solid rgb(103, 196, 103);
+    align-items: center;
+    justify-self: center;
+    height: 300px;
+  }
+  .title {
+    background-color: rgb(103, 196, 103);
+    padding: 1px 15px;
+    border-radius: 5px;
+    margin: 5px auto;
+    color: white;
+    /* text-align: center */
+  }
+  .content {
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 5px;
+    width: 0%;
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid rgb(103, 196, 103);
+    margin: 10px auto;
+    padding: 20px;
+  }
+  button {
+    border-radius: 5px;
+    background-color: rgb(103, 196, 103);
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid rgb(103, 196, 103);
+  }
 }
 </style>

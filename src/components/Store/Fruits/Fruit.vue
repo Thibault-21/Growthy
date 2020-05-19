@@ -86,4 +86,53 @@ button {
   margin-left: 20px;
   border: 1px solid rgb(143, 204, 224);
 }
+@media only screen and (max-width: 375px) {
+  .main {
+    display: grid; 
+    grid-template-columns: 100%;
+    /* border: 5px solid blue; */
+    margin: 10px 0px;
+    height: 300px;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 5px;
+    width: 350px;
+    border: 3px solid rgb(143, 204, 224);
+    align-items: center;
+    justify-self: center;
+    height: 300px;
+  }
+  .title {
+    background-color: rgb(143, 204, 224);
+    padding: 1px 15px;
+    border-radius: 5px;
+    margin: 5px auto;
+    color: white;
+    /* text-align: center */
+  }
+  .content {
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 5px;
+    width: 0%;
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid rgb(143, 204, 224);
+    margin: 10px auto;
+    padding: 20px;
+  }
+  button {
+    border-radius: 5px;
+    background-color: rgb(143, 204, 224);
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid rgb(143, 204, 224);
+  }
+}
 </style>

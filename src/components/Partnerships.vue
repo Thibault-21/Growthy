@@ -59,7 +59,7 @@ export default {
   grid-gap: 10px;
 }
 .header {
-  color: lightsalmon;
+  color: rgb(1, 166, 79);
   text-align: center;
 }
 .gallery {
@@ -69,34 +69,17 @@ export default {
   grid-gap: 30px; 
   margin: 15px 35px 25px 15px;
 }
-
 .sup {
   padding: 10px;
   border-radius: 5px;
   margin: 15px 0px;
-  border: 2px solid lightsalmon;
+  border: 2px solid rgb(1, 166, 79);
   height: 90%;
 }
-.sup-1:hover {
-  background-color: lightsalmon;
+.sup:hover {
+  background-color: rgb(1, 166, 79);
   color: white;
-
 }
-.sup-2:hover {
-  background-color: lightsalmon;
-  color: white;
-  
-  }
-.sup-3:hover {
-  background-color: lightsalmon;
-  color: white;
-
-  }
-.sup-4:hover {
-  background-color: lightsalmon;
-  color: white;
-
-  }
 .content {
   height: 100%;
 }
@@ -112,13 +95,42 @@ a {
   margin: 10px;
 }
 .before-footer {
-  color: lightsalmon;
+  color: rgb(1, 166, 79);
   text-align: center;
 }
 .footer {
-  background-color: lightcoral;
+  background-color: black;
   margin: 30px 0px 5px 0px;
   padding: 10px;
   color: white;
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    display: grid;
+    grid-template-rows: 5% 80% 5% 10%;
+    grid-gap: 10px;
+    width: 700px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 50% 50%; 
+    grid-gap: 30px; 
+    margin: 15px 35px 25px 15px;
+  }
+  .sup {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0px;
+    border: 2px solid rgb(1, 166, 79);
+    height: 90%;
+  }
+  .footer {
+    background-color: black;
+    margin: 30px 0px 5px 0px;
+    padding: 10px;
+    color: white;
+    width: 850px;
+  }
 }
 </style>

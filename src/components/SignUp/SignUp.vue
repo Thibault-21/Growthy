@@ -21,7 +21,9 @@
       </div>
     </div>
     <!--  -->
-    <div class="addvertising"></div>
+    <div class="addvertising">
+      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="image de fruits et légumes sur un marché">
+    </div>
   </div>
 </template>
 
@@ -47,10 +49,10 @@ export default {
 
   display: grid; 
   grid-template-columns: 100%;
-  grid-template-rows: 5% 50% 30% 10% 5%;
+  grid-template-rows: 15% 55% 30%;
   grid-gap: 10px;
   height: 100%;
-  border: 1px solid lightcoral;
+  border: 1px solid rgb(18, 206, 105);
   border-radius: 5px;
   margin: 10px;
   padding: 10px 5px;
@@ -108,10 +110,10 @@ input {
   border: 1px solid lightgray;
 }
 input::placeholder {
-  color: lightcoral;
+  color: rgb(18, 206, 105);
 }
 input:hover {
-  border: 1px solid lightcoral;
+  border: 1px solid rgb(18, 206, 105);
 }
 .connexion {
   grid-column-start: 1;
@@ -145,7 +147,7 @@ input:hover {
   grid-row-end: 3;
 
   border-radius: 5px;
-  background-color: rgb(103, 196, 103);
+  background-color: rgb(18, 206, 105);
   border: 1px solid rgb(103, 196, 103);
   color: white;
   height: 50%;
@@ -158,7 +160,7 @@ input:hover {
   grid-row-start: 3;
   grid-row-end: 4;
 
-  height: 100%;
+  height: 70%;
   font-size: 12px;
   text-align: center;
 }
@@ -170,5 +172,8 @@ a {
   display: grid; 
   height: 100%;
 }
-
+img {
+  border-radius: 5px;
+  margin: 10px;
+}
 </style>

@@ -55,7 +55,7 @@ export default {
 
   display: grid;
   background-color: white;
-  border: 3px solid lightcoral;
+  border: 3px solid rgb(18, 206, 105);
   padding: 35px;
   border-radius: 5px;
   height: 100%;
@@ -92,7 +92,7 @@ a {
   grid-row-end: 3;
 
   text-decoration: none;
-  color: lightcoral;
+  color: rgb(18, 206, 105);
   font-size: 12px;
 }
 .userInfos {
@@ -110,10 +110,10 @@ input {
   justify-self: center;
 }
 input::placeholder {
-  color: lightcoral;
+  color: rgb(18, 206, 105);
 }
 input:hover {
-  border: 1px solid lightcoral;
+  border: 1px solid rgb(18, 206, 105);
 }
 .connexion {
   display: grid;
@@ -130,10 +130,10 @@ button {
   grid-row-start: 1;
   grid-row-end: 2;
 
-  background-color: lightcoral;
+  background-color: rgb(18, 206, 105);
   border-radius: 5px;
   color: white;
-  border: 1px solid lightcoral;
+  border: 1px solid rgb(18, 206, 105);
   padding: 0px 55px;
   margin: 5px;
 }

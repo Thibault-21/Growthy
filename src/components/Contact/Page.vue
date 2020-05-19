@@ -89,8 +89,25 @@ footer {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: lightcoral;
+  background-color: black;
+  color: white;
   padding: 20px;
 }
-
+@media only screen and (max-width: 480px) {
+  .infos {
+    background-color: white;
+    height: 730px;
+    place-self: center;
+  }
+footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 850px;
+}
+}
 </style>
