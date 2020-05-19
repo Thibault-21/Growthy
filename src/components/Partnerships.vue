@@ -107,13 +107,20 @@ a {
 @media only screen and (max-width: 375px) {
   .main {
     display: grid;
-    grid-template-rows: 5% 80% 5% 10%;
+    grid-template-rows:85% 15%;
     grid-gap: 10px;
-    width: 700px;
+    height: 730px;
+    width: 375px;
   }
+  .header {
+  color: rgb(1, 166, 79);
+  text-align: left;
+}
   .gallery {
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: grid;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 100%; 
     grid-template-rows: 50% 50%; 
     grid-gap: 30px; 
     margin: 15px 35px 25px 15px;
@@ -125,12 +132,13 @@ a {
     border: 2px solid rgb(1, 166, 79);
     height: 90%;
   }
+  .before-footer {
+    color: rgb(1, 166, 79);
+    text-align: center;
+    visibility: hidden;
+  }
   .footer {
-    background-color: black;
-    margin: 30px 0px 5px 0px;
-    padding: 10px;
-    color: white;
-    width: 850px;
+    visibility: hidden;
   }
 }
 </style>
