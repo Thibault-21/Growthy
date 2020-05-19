@@ -176,4 +176,32 @@ img {
   border-radius: 5px;
   margin: 10px;
 }
+@media only screen and (max-width: 375px) {
+  .main {
+  display: grid; 
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100;
+  padding: 20px;
+  height: 100%;
+}
+.subscription {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  display: grid; 
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 55% 30%;
+  grid-gap: 10px;
+  height: 100%;
+  border: 1px solid rgb(18, 206, 105);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 5px;
+}
+  img {
+    visibility: hidden;
+  }
+}
 </style>
