@@ -147,4 +147,39 @@ button {
 *:focus {
   outline: none;
 }
+@media only screen and (max-width: 375px) {
+  .main {
+    background-color: lightgrey;
+    height: 330px;
+    width: 375px;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 30% 40%;
+    grid-gap: 5px; 
+    height: 350px 
+  }
+  .top {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .login {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    display: grid;
+    background-color: white;
+    border: 3px solid rgb(18, 206, 105);
+    padding: 35px;
+    border-radius: 5px;
+    height: 100%;
+    margin: 20px 20px;
+    width: 250px;
+  }
+}
 </style>
