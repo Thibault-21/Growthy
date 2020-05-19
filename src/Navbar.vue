@@ -66,7 +66,7 @@ img {
     background-color: rgb(1, 166, 79);
     color: white;
     padding: 30px;
-    width: 840px;
+    width: 375px;
     display: grid;
   }
   .active {
@@ -94,7 +94,7 @@ img {
   .nav-bar3 {
     margin: 0px 0px 10px 10px;
     justify-self: left;
-    text-align: right;
+    text-align: left;
   }
   .nav-bar4 {
      margin: 0px 0px 0px 10px;
